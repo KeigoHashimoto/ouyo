@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "deploy": "npm run build && echo 'your-project.com' > dist/CNAME && cp -r dist/* docs/",
+    "clean": "rm -rf docs/*"
   },
   "dependencies": {
     "core-js": "^3.8.3",
