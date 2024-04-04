@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "npm run build && echo 'your-project.com' > dist/CNAME && cp -r dist/* docs/",
     "clean": "rm -rf docs/*"
