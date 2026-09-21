@@ -13,9 +13,9 @@ const viewCorrect = () => {
 
 const qaNumber = ref(0);
 const next = () => {
-  let num = Math.floor(Math.random() * question.qa.length);
+  let num = Math.floor(Math.random() * qaList.value.qa.length);
   if (num === qaNumber.value) {
-    num = Math.floor(Math.random() * question.qa.length);
+    num = Math.floor(Math.random() * qaList.value.qa.length);
   }
   qaNumber.value = num;
   ansFlg.value = false;
